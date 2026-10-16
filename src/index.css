@@ -1,0 +1,190 @@
+*{
+   font-family: "Poppins", sans-serif;
+  /* font-style: normal; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navigation bar styling */
+.container{
+  display: flex;
+  padding: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  z-index: 2px;
+  width: 100%;
+  box-shadow: 2px 4px 20px rgb(182, 167, 167);
+}
+
+.menus ul{
+  display: flex;
+  gap: 3rem;
+}
+li{
+  list-style: none;
+}
+
+.menus a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: normal;
+}
+
+
+  a:hover{
+border-bottom: 2px solid gold;
+transform: scale(1.1);
+transition: 0.5s ease;
+  }
+
+.handburger{
+  color: black;
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+/* about section */
+.about-container{
+  /* padding-top: 8rem; */
+  background: linear-gradient(rgba(2, 50, 4, 0.8), rgba(2, 50, 7, 0.6)), url("https://static.vecteezy.com/system/resources/thumbnails/032/302/030/small_2x/a-beautiful-home-with-a-driveway-and-flowers-ai-generated-free-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 8rem;
+}
+
+.about-left{
+  /* display: flex; */
+  flex-direction: column;
+  background-color: red;
+  /* width: 50%; */
+}
+
+/* about page */
+.home-container{
+  padding: 8rem;
+}
+/* about section end */
+
+/* home sectoin */
+.home-container{
+  width: 100%;
+  display: flex;
+ gap: 2rem;
+ background-color: whitesmoke;
+}
+
+.home-made{
+  color: blue;
+}
+
+.home-left2{
+  color: grey;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.home-p{
+  color: rgb(61, 61, 158);
+  font-size: 1.5rem;
+}
+
+.home-h1{
+  font-size: 4rem;
+  line-height: 4rem;
+  color: rgb(2, 2, 20);
+}
+
+.home-right img{
+  max-width: 450px;
+  border-radius: 2rem;
+}
+
+.home-right img:hover{
+transform: translateY(-5px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+}
+
+.btn-left-1 a{
+  padding: 0.4rem 4rem;
+  background-color: blue;
+  border-radius: 2rem;
+ border-bottom: none;
+ color: whitesmoke;
+ font-size: 1.3rem;
+ margin-right: 0.5rem;
+}
+
+.btn-left-2 a{
+  padding: 0.4rem 4rem;
+ border: 2px solid blue;
+  border-radius: 2rem;
+ border-bottom: none;
+ color: green;
+ font-size: 1.3rem;
+ margin-left: 0.5rem;
+}
+
+.btn-left{
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+
+
+@media (max-width:900px) {
+  .menus ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    top: 120%;
+    left: 0;
+    /* z-index: 200px; */
+    background-color: white;
+    box-shadow: 4px 4px 2px  rgb(177, 162, 162);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+  }
+
+  .handburger{
+    display: flex;
+   
+  }
+
+  a:hover{
+border-bottom: 4px greenyellow solid;
+  }
+
+  ul.active{
+    display: flex;
+  }
+
+  .icon-bar{
+  display: none;
+  }
+
+  /* home section */
+  .home-container{
+    flex-direction: column;
+  }
+
+  .home-right{
+    margin-top: 2rem;
+  }
+  
+}
+
