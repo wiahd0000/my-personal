@@ -3,22 +3,22 @@ import {Link} from 'react-router-dom'
 
 function Navbar() {
 
-  useEffect(() => {
-    const menus = document.getElementById('menus');
-    const btn = document.getElementById('btnburger');
+  // useEffect(() => {
+  //   const menus = document.getElementById('menus');
+  //   const btn = document.getElementById('btnburger');
 
-    if (!menus || !btn) return;
+  //   if (!menus || !btn) return;
 
-    const toggleMenu = () => {
-      menus.classList.toggle('active');
-    };
+  //   const toggleMenu = () => {
+  //     menus.classList.toggle('active');
+  //   };
 
-    btn.addEventListener('click', toggleMenu);
+  //   btn.addEventListener('click', toggleMenu);
 
-    return () => {
-      btn.removeEventListener('click', toggleMenu);
-    };
-  }, []);
+  //   return () => {
+  //     btn.removeEventListener('click', toggleMenu);
+  //   };
+  // }, []);
   return (
     <>
       <header className='container'>
@@ -42,11 +42,6 @@ function Navbar() {
               <Link to={"/contact"}>Contact-Us</Link>
             </li>
 
-
-            {/* <li><a href="#habout">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#testimony">Testimony</a></li>
-            <li><a href="#contact">Contact-Us</a></li> */}
           </ul>
 
         </nav>
