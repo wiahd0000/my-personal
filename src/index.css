@@ -142,7 +142,7 @@ transform: translateY(-5px);
 }
 
 
-
+/* for big table and small laptop */
 @media (max-width:900px) {
   .menus ul{
     display: none;
@@ -158,6 +158,10 @@ transform: translateY(-5px);
     border-radius: 2rem;
     margin-left: 2rem;
     text-align: center;
+  }
+
+  .home-container{
+    padding: 2rem;
   }
 
   .handburger{
@@ -180,11 +184,101 @@ border-bottom: 4px greenyellow solid;
   /* home section */
   .home-container{
     flex-direction: column;
+   text-align: center;
+    align-items: center;
+    padding-top: 8rem;
+  }
+
+  .home-h1{
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+  }
+
+  .home-p{
+font-size: 2rem;
   }
 
   .home-right{
     margin-top: 2rem;
   }
+
+  .home-right img{
+  max-width: 400px;
+  border-radius: 1.5rem;
+}
   
 }
+
+/* for medium size table and some phones */
+
+@media (max-width:600px) {
+  
+  /* home section */
+  .home-container{
+    flex-direction: column;
+   text-align: center;
+    align-items: center;
+    padding-top: 8rem;
+  }
+
+  .home-h1{
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+  }
+
+  .home-p{
+font-size: 2rem;
+  }
+
+  .home-right{
+    margin-top: 2rem;
+  }
+
+  .home-right img{
+  max-width: 320px;
+  
+}
+
+.btn-left{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+ 
+}
+
+/* for smao screen phones */
+@media (max-width:320px) {
+  
+  /* home section */
+  .home-container{
+    flex-direction: column;
+   text-align: center;
+    align-items: center;
+    padding-top: 8rem;
+  }
+
+  .home-h1{
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+  }
+
+  .home-p{
+font-size: 2rem;
+  }
+
+  .home-right{
+    margin-top: 2rem;
+  }
+
+  .home-right img{
+  max-width: 300px;
+  border-radius: 1.5rem;
+}
+  
+}
+
+
+
+
 
