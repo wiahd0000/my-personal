@@ -283,8 +283,13 @@ gap: 1.5rem;
   /* about section */
   .about-container{
     flex-direction: column;
-    padding: 2rem 4rem;
-    /* justify-content: center; */
+    padding: 2rem 2rem;
+    justify-content: center;
+   align-items: center;
+  }
+
+  .btn-left{
+    flex-direction: column;
   }
 
   .left-h2{
@@ -293,9 +298,12 @@ gap: 1.5rem;
 
   .right img{
   width: 400px;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
+   border-radius: 50%;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.right img:hover{
+transform: scale(1.1);
 }
 }
 
