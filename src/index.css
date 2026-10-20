@@ -1,5 +1,5 @@
-*{
-   font-family: "Poppins", sans-serif;
+* {
+  font-family: "Poppins", sans-serif;
   /* font-style: normal; */
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 /* navigation bar styling */
-.container{
+.container {
   display: flex;
   padding: 1.2rem;
   justify-content: space-around;
@@ -20,15 +20,16 @@
   box-shadow: 2px 4px 20px rgb(182, 167, 167);
 }
 
-.menus ul{
+.menus ul {
   display: flex;
   gap: 3rem;
 }
-li{
+
+li {
   list-style: none;
 }
 
-.menus a{
+.menus a {
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
@@ -36,57 +37,44 @@ li{
 }
 
 
-  a:hover{
-border-bottom: 2px solid gold;
-transform: scale(1.1);
-transition: 0.5s ease;
-  }
+li:hover {
+  /* border-bottom: 2px solid gold;
+  transform: scale(1.1);
+  transition: 0.5s ease; */
+  border: 2px solid grey;
+  padding: 4px;
+  border-radius: 6px;
+}
 
-.handburger{
+.handburger {
   color: black;
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
 
-
-/* about section */
-.about-container{
-  /* padding-top: 8rem; */
-  background: linear-gradient(rgba(2, 50, 4, 0.8), rgba(2, 50, 7, 0.6)), url("https://static.vecteezy.com/system/resources/thumbnails/032/302/030/small_2x/a-beautiful-home-with-a-driveway-and-flowers-ai-generated-free-photo.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 8rem;
+.btn-nav {
+  padding: 8px 20px;
+  background-color: green;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
 }
-
-.about-left{
-  /* display: flex; */
-  flex-direction: column;
-  background-color: red;
-  /* width: 50%; */
-}
-
-/* about page */
-.home-container{
-  padding: 8rem;
-}
-/* about section end */
 
 /* home sectoin */
-.home-container{
+.home-container {
+  padding: 8rem;
   width: 100%;
   display: flex;
- gap: 2rem;
- background-color: whitesmoke;
+  gap: 2rem;
+  background-color: whitesmoke;
 }
 
-.home-made{
+.home-made {
   color: blue;
 }
 
-.home-left2{
+.home-left2 {
   color: grey;
   line-height: 2rem;
   font-size: 1.2rem;
@@ -94,57 +82,136 @@ transition: 0.5s ease;
   margin-top: 1rem;
 }
 
-.home-p{
+.home-p {
   color: rgb(61, 61, 158);
   font-size: 1.5rem;
 }
 
-.home-h1{
+.home-h1 {
   font-size: 4rem;
   line-height: 4rem;
   color: rgb(2, 2, 20);
 }
 
-.home-right img{
+.home-right img {
   max-width: 450px;
   border-radius: 2rem;
+  transition: transform 0.3s ease;
 }
 
-.home-right img:hover{
-transform: translateY(-5px);
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.14);
+.home-right img:hover {
+
+  transform: scale(1.1);
 }
 
 .btn-left-1 a{
   padding: 0.4rem 4rem;
-  background-color: blue;
-  border-radius: 2rem;
- border-bottom: none;
- color: whitesmoke;
- font-size: 1.3rem;
- margin-right: 0.5rem;
+  /* background-color: blue; */
+  border: 2px solid grey;
+  border-radius: 1rem;
+  color: blue;
+background-color: blue;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  box-shadow: 2px 2px 2px rgb(172, 141, 141);
 }
 
-.btn-left-2 a{
+.btn-left-2 a {
   padding: 0.4rem 4rem;
- border: 2px solid blue;
-  border-radius: 2rem;
- border-bottom: none;
- color: green;
- font-size: 1.3rem;
- margin-left: 0.5rem;
+  border: 2px solid rgb(143, 120, 120);
+  border-radius: 1rem;
+  border-bottom: none;
+  color: green;
+  background-color: blue;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  box-shadow: 2px 4px 2px rgb(219, 214, 214);
 }
 
-.btn-left{
+.btn-left-2 a:hover{
+  border: 2px solid green;
+
+  background-color: transparent;
+  color: green;
+}
+
+.btn-left-1 a:hover{
+  border: 1.5px solid blue;
+  background-color: transparent;
+  color: blue;
+  
+}
+
+.btn-left {
   margin-top: 2rem;
   text-align: center;
 
 }
 
+/* home ending */
+
+
+
+/* about section */
+.about-container {
+  padding: 0rem 8rem;
+  background-color: whitesmoke;
+  display: flex;
+  gap: 2rem;
+}
+
+.right img{
+  width: 450px;
+  border-radius: 50%;
+}
+
+.line{
+  font-size: 3rem;
+  color: blue;
+}
+
+.left-h2{
+  font-size: 2.2rem;
+  color: blue;
+}
+
+.left-p{
+  font-size: 22px;
+  text-align: justify;
+  color: grey;
+}
+
+.btn-left button{
+  padding: 6px 20px;
+  /* border-radius: 2rem; */
+  background-color: blue;
+border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-left a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.4rem;
+
+ 
+}
+
+.btn-left{
+gap: 1.5rem;
+ display: flex;
+ justify-content: center;
+ margin-top: 8px;
+}
+
+
+/* about section end */
+
 
 /* for big table and small laptop */
 @media (max-width:900px) {
-  .menus ul{
+  .menus ul {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -153,132 +220,171 @@ transform: translateY(-5px);
     left: 0;
     /* z-index: 200px; */
     background-color: white;
-    box-shadow: 4px 4px 2px  rgb(177, 162, 162);
+    box-shadow: 4px 4px 2px rgb(177, 162, 162);
     padding: 2rem;
     border-radius: 2rem;
     margin-left: 2rem;
     text-align: center;
   }
 
-  .home-container{
+  .btn-nav {
+    display: none;
+  }
+
+  .home-container {
     padding: 2rem;
   }
 
-  .handburger{
+  .handburger {
     display: flex;
-   
+
   }
 
-  a:hover{
-border-bottom: 4px greenyellow solid;
+  a:hover {
+    /* border-bottom: 4px greenyellow solid; */
+    background-color: blue;
+    color: whitesmoke;
   }
 
-  ul.active{
+  ul.active {
     display: flex;
   }
 
-  .icon-bar{
-  display: none;
+  .icon-bar {
+    display: none;
   }
 
   /* home section */
-  .home-container{
+  .home-container {
     flex-direction: column;
-   text-align: center;
+    text-align: center;
     align-items: center;
     padding-top: 8rem;
   }
 
-  .home-h1{
+  .home-h1 {
     font-size: 3.2rem;
     line-height: 3.9rem;
   }
 
-  .home-p{
-font-size: 2rem;
+  .home-p {
+    font-size: 2rem;
   }
 
-  .home-right{
+  .home-right {
     margin-top: 2rem;
   }
 
-  .home-right img{
-  max-width: 400px;
-  border-radius: 1.5rem;
+  .home-right img {
+    max-width: 400px;
+    border-radius: 1.5rem;
+  }
+
+  /* about section */
+  .about-container{
+    flex-direction: column;
+    padding: 2rem 4rem;
+    /* justify-content: center; */
+  }
+
+  .left-h2{
+    text-align: center;
+  }
+
+  .right img{
+  width: 400px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
-  
 }
+
 
 /* for medium size table and some phones */
 
 @media (max-width:600px) {
-  
+
   /* home section */
-  .home-container{
+  .home-container {
     flex-direction: column;
-   text-align: center;
+    text-align: center;
     align-items: center;
     padding-top: 8rem;
   }
 
-  .home-h1{
+  .home-h1 {
     font-size: 3.2rem;
     line-height: 3.9rem;
   }
 
-  .home-p{
-font-size: 2rem;
+  .home-p {
+    font-size: 2rem;
   }
 
-  .home-right{
+  .home-right {
     margin-top: 2rem;
   }
 
-  .home-right img{
-  max-width: 320px;
-  
+  .home-right img {
+    max-width: 320px;
+
+  }
+
+  .btn-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* about section */
+    .about-container{
+    flex-direction: column;
+    padding: 1rem 4rem;
+    
+  }
+
+  .right img{
+  width: 320px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
 }
 
-.btn-left{
-display: flex;
-flex-direction: column;
-gap: 2rem;
-}
- 
-}
 
 /* for smao screen phones */
 @media (max-width:320px) {
-  
+
   /* home section */
-  .home-container{
+  .home-container {
     flex-direction: column;
-   text-align: center;
+    text-align: center;
     align-items: center;
     padding-top: 8rem;
   }
 
-  .home-h1{
+  .home-h1 {
     font-size: 3.2rem;
     line-height: 3.9rem;
   }
 
-  .home-p{
-font-size: 2rem;
+  .home-p {
+    font-size: 2rem;
   }
 
-  .home-right{
+  .home-right {
     margin-top: 2rem;
   }
 
-  .home-right img{
-  max-width: 300px;
-  border-radius: 1.5rem;
+  .home-right img {
+    max-width: 300px;
+    border-radius: 1.5rem;
+  }
+
+
+  /* about sectioni */
+
+   .right img{
+  width: 300px;
 }
-  
 }
-
-
-
-
-

@@ -1,21 +1,40 @@
 import React from 'react';
+import profile from '../Images/profile-one.jpeg';
+import resume from '../assets/resume.pdf'
 
 function About() {
   return (
     <>
     <div className="about-container">
-   <div className="about-left">
-      <h1>Welcome To Mr. Wiah </h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae tempora quia minima enim voluptate, excepturi amet. Nesciunt atque hic eos. Est eveniet in itaque, corporis hic dolorem vitae? Voluptatum est quo sunt quasi fugit optio tempora perspiciatis ullam obcaecati. Nostrum unde culpa sed quae a, veritatis facere alias autem, adipisci dolorum eligendi aut? Aliquam nobis mollitia, quae rerum unde qui quo quia, vitae sunt possimus quod aperiam error ipsum explicabo perferendis voluptate est accusantium?</p>
-      <div className="left-btn">
-        <button>view-more</button>
-        <button>View-more</button>
-      </div>
-   </div>
+   
+      <div className="about-left">
+        <span className='line'>_____</span>
+        <h2 className='left-h2' >About-Me</h2>
+        <p className='left-p' >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque vero fuga iusto, culpa eveniet fugiat. Recusandae non laudantium esse cumque, distinctio laboriosam. Labore sequi eligendi, autem recusandae totam porro, fugiat eum, incidunt iste repellat excepturi!</p>
 
-   <div className="about-right">
-    
-   </div>
+        
+
+         <div className="btn-left">
+       
+         <div>
+          <button btn-contact-me>
+          <a href="#">Contact-Me</a>
+         </button>
+
+         </div>
+         <div>
+          <button className='btn-cv'>
+          <a href= {resume} download='resume'>Download-M</a>
+          </button> </div> 
+      </div>
+      </div>
+      
+
+      <div className="right">
+        <img src= {profile} alt="" />
+        {/* <button>cv-download</button> */}
+      </div>
+
       
     </div>
     </>

@@ -25,7 +25,7 @@ function Navbar() {
         <h1>Wiah <span>-Tech</span></h1>
         <nav className='menus'>
           <ul id='menus'>
-            <li>
+            <li className='home'>
               <Link to={"/"}>Home</Link>
             </li>
 
@@ -47,6 +47,8 @@ function Navbar() {
         </nav>
         <div>
           <span className='handburger' id='btnburger'><i className="fa-solid fa-bars"></i></span>
+
+             <span className='btn-nav'> <a href="https://wa.me/qr/HRFSUDWAJUVQD1"><i className="fa-brands fa-whatsapp"></i></a>WhatsApp</span>
         </div>
       </header>
     </>
