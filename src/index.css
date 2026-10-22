@@ -68,6 +68,7 @@ li:hover {
   display: flex;
   gap: 2rem;
   background-color: whitesmoke;
+  padding-bottom: 0rem;
 }
 
 .home-made {
@@ -104,13 +105,13 @@ li:hover {
   transform: scale(1.1);
 }
 
-.btn-left-1 a{
+.btn-left-1 a {
   padding: 0.4rem 4rem;
   /* background-color: blue; */
   border: 2px solid grey;
   border-radius: 1rem;
   color: blue;
-background-color: blue;
+  background-color: blue;
   font-size: 1.5rem;
   margin-right: 0.5rem;
   box-shadow: 2px 2px 2px rgb(172, 141, 141);
@@ -128,18 +129,18 @@ background-color: blue;
   box-shadow: 2px 4px 2px rgb(219, 214, 214);
 }
 
-.btn-left-2 a:hover{
+.btn-left-2 a:hover {
   border: 2px solid green;
 
   background-color: transparent;
   color: green;
 }
 
-.btn-left-1 a:hover{
+.btn-left-1 a:hover {
   border: 1.5px solid blue;
   background-color: transparent;
   color: blue;
-  
+
 }
 
 .btn-left {
@@ -154,60 +155,244 @@ background-color: blue;
 
 /* about section */
 .about-container {
-  padding: 0rem 8rem;
+  padding: 6rem 8rem;
   background-color: whitesmoke;
   display: flex;
   gap: 2rem;
+  padding-bottom: 0rem;
 }
 
-.right img{
+.right img {
   width: 450px;
   border-radius: 50%;
 }
 
-.line{
+.line {
   font-size: 3rem;
   color: blue;
 }
 
-.left-h2{
+.left-h2 {
   font-size: 2.2rem;
   color: blue;
 }
 
-.left-p{
+.left-p {
   font-size: 22px;
   text-align: justify;
   color: grey;
 }
 
-.btn-left button{
+.btn-left button {
   padding: 6px 20px;
   /* border-radius: 2rem; */
   background-color: blue;
-border: none;
-    border-radius: 4px;
-    color: white;
+  border: none;
+  border-radius: 4px;
+  color: white;
 }
 
-.btn-left a{
+.btn-left a {
   text-decoration: none;
   color: whitesmoke;
   font-size: 1.4rem;
 
- 
+
 }
 
-.btn-left{
-gap: 1.5rem;
- display: flex;
- justify-content: center;
- margin-top: 8px;
+.btn-left {
+  gap: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
 }
-
 
 /* about section end */
 
+/*project section begin  */
+
+.projects {
+  width: 100%;
+  background-color: whitesmoke;
+  /* display: flex; */
+  padding: 8rem;
+  padding-bottom: 0rem;
+}
+
+.my-work span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.project-h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+
+.project-work img {
+  width: 350px;
+  margin: auto;
+  display: flex;
+
+
+}
+
+
+.project-work {
+  max-width: 350px;
+  background-color: blueviolet;
+  box-shadow: 2px 4px 2px rgb(230, 224, 224);
+  height: auto;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+
+}
+
+/* .project-work:hover{
+
+transform: scale(1.05);
+overflow: hidden;
+} */
+
+
+.project-work p {
+  font-size: 1rem;
+  color: whitesmoke;
+  text-align: justify;
+}
+
+.project-work h5 {
+  font-size: 2rem;
+  color: white;
+}
+
+.btn-project {
+  padding: 10px;
+  margin-left: 2rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn-project:hover {
+  background-color: rgb(43, 1, 43);
+  transform: scale(1.1);
+}
+
+.project-work p,
+h5 {
+  padding: 0 2rem;
+}
+
+
+.btn-project a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.project-sub-container {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+/* project section end! */
+
+/* SKILL SECTION */
+.skill-container {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-top: 8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+
+}
+
+.skill {
+  text-align: center;
+  font-size: 1.9rem;
+  text-decoration-line: underline;
+  color: purple;
+}
+
+.skill-text {
+  font-size: 1.4rem;
+  text-align: justify;
+  line-height: 2.5rem;
+}
+
+.btn-skill {
+  background-color: transparent;
+  width: 250px;
+  height: 60px;
+  box-shadow: 2px 2px 2px rgb(231, 216, 216);
+  border: 2px solid grey;
+  border-radius: 2px;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.btn-skill:hover {
+  background-color: purple;
+}
+
+.html {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+ .html:hover{
+  color: white;
+ }
+
+  .btn-skill i{
+  color: none;
+ }
+
+.btn-skill i {
+  color: orange;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.skill-card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+#react{
+  color: rgb(40, 142, 173);
+}
+
+#css{
+  color: rgb(16, 16, 131);
+}
+
+#javascript{
+  color: rgb(224, 228, 16);
+}
+
+/* contact section */
+.contact{
+  width: 100%;
+  background-color: whitesmoke;
+}
 
 /* for big table and small laptop */
 @media (max-width:900px) {
@@ -218,7 +403,6 @@ gap: 1.5rem;
     gap: 1rem;
     top: 120%;
     left: 0;
-    /* z-index: 200px; */
     background-color: white;
     box-shadow: 4px 4px 2px rgb(177, 162, 162);
     padding: 2rem;
@@ -241,8 +425,7 @@ gap: 1.5rem;
   }
 
   a:hover {
-    /* border-bottom: 4px greenyellow solid; */
-    background-color: blue;
+    background-color: none;
     color: whitesmoke;
   }
 
@@ -281,30 +464,77 @@ gap: 1.5rem;
   }
 
   /* about section */
-  .about-container{
+  .about-container {
     flex-direction: column;
     padding: 2rem 2rem;
     justify-content: center;
-   align-items: center;
+    align-items: center;
   }
 
-  .btn-left{
+  .btn-left {
     flex-direction: column;
   }
 
-  .left-h2{
+  .left-h2 {
     text-align: center;
   }
 
-  .right img{
-  width: 400px;
-   border-radius: 50%;
-  /* align-items: center; */
-  /* justify-content: center; */
-}
-.right img:hover{
-transform: scale(1.1);
-}
+  .right img {
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  .right img:hover {
+    transform: scale(1.1);
+  }
+
+  .line {
+    text-align: center;
+  }
+
+  /* project section */
+
+  .project-sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    padding: 2rem;
+  }
+
+  .projects p,
+  h3 {
+    text-align: center;
+  }
+
+  .my-work span {
+    color: rgb(109, 13, 109);
+    background-color: whitesmoke;
+    align-items: center;
+    padding: 0.2rem 1.3rem;
+    border-radius: 2rem;
+    border: 2px solid purple;
+    box-shadow: 2px 4px 2px rgb(211, 173, 173);
+    cursor: pointer;
+
+  }
+
+  .my-work span:hover {
+    background-color: purple;
+    color: whitesmoke;
+  }
+
+  /* skill section */
+  .skill-card{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  }
+
+  .skill-container{
+    padding: 0rem 4rem;
+  }
 }
 
 
@@ -345,18 +575,24 @@ transform: scale(1.1);
   }
 
   /* about section */
-    .about-container{
+  .about-container {
     flex-direction: column;
     padding: 1rem 4rem;
-    
+
   }
 
-  .right img{
-  width: 320px;
-  border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-}
+  .right img {
+    width: 320px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* project section */
+  .projects {
+    flex-direction: column;
+  }
+
 }
 
 
@@ -389,10 +625,9 @@ transform: scale(1.1);
     border-radius: 1.5rem;
   }
 
-
   /* about sectioni */
 
-   .right img{
-  width: 300px;
-}
+  .right img {
+    width: 300px;
+  }
 }

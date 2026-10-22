@@ -2,9 +2,10 @@ import React from 'react'
 import profile from '../Images/profile-one.jpeg'
 import { TypeAnimation } from "react-type-animation";
 import About from './About';
-import Skills from "./Skills"
-import Testimony from "./Testimony"
-import Contact from "./Contact"
+import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
+
 
 
 function Home() {
@@ -58,9 +59,10 @@ function Home() {
    </div>
    </div>
    <About/>
+   <Projects/>
    <Skills/>
-   <Testimony/>
    <Contact/>
+   
    </>
   )
 };
